@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Tracker</title>
+
+    <!--Load CSS Library, Fonts, Stylesheet->
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Pacifico" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <!--our style sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>Issue Tracker 2.0 </h1>
+
+    <p id ="kotlin-proof">*entirely written in Kotlin language <br> <span id="no-javascript">There is no javascript</span></p>
+
+    <div class="jumbotron">
+        <h2>Add New Issue</h2>
+        <br>
+
+        <form>
+            <div class="form-group">
+                <label>Issue</label>
+
+
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon"><i class="fab fa-github fa-2x" aria-hidden="true"></i></div>
+                    <input type="text" class="form-control" name="description" placeholder="Describe the issue">
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="mr-sm-2">Severity</label>
+
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="severity">
+                        <option value="low" selected>Low</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Assigned to:</label>
+                        <!--mb-2?? type? name?-->
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"><i class="fas fa-user-circle fa-2x" aria-hidden="true"></i></div>
+                        <input type="text" class="form-control" name="responsible" placeholder="Enter Person Responsible for the issue">
+                    </div>
+                </div>
+
+                <button id="submit-btn" type="submit" class="btn btn-primary">Track Issue</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <button id="button" type="submit" class="btn btn-primary">material</button>
+</div>
+
+<div class="container">
+
+    <ul id="issue-posted" class="list-unstyled list-bordered">
+
+
+
+    </ul>
+
+
+</div>
+
+
+
+
+
+<!--Load JavaScript Library-->
+
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--popper.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!--bootstrap js-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+<!--Kotlin JS lib -->
+<script type="text/javascript" src="out/production/Issue Tracker Kotlin/lib/kotlin.js"></script>
+<!--Kotlin compiled to javascript, Custom App-->
+<script type="text/javascript" src="out/production/Issue Tracker Kotlin/Issue Tracker Kotlin.js"></script>
+
+
+</body>
+</html>

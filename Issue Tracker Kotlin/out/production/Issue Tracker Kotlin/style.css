@@ -1,0 +1,30 @@
+h1{
+
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+p{
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body{
+
+background-color: GreenYellow;
+}
+
+#kotlin-proof{
+
+    font-family: 'Pacifico', sans-serif;
+    font-size: 23px;
+    color: #6481a1;
+}
+
+#no-javascript{
+
+color: red;
+
+}
