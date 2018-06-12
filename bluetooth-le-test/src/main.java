@@ -24,8 +24,7 @@ public class main {
         //initializes Bluetooth adapter
         final BluetoothManager bluetoothManager = BluetoothManager.getBluetoothManager();
 
-        //get the first  bluetooth adapter (here we can select witch adapter)
-        //this is not common good practice your will need to get your bluetooth device with the mac address
+        //get the first bluetooth adapter (here we can select the adapter we want to use)
         mBluetoothAdapter = bluetoothManager.getAdapters().get(0);
 
         //TODO should add a safety to verify if null or not (bluetooth adapter)
@@ -46,6 +45,7 @@ public class main {
             List<BluetoothDevice> bluetoothDevice = mBluetoothAdapter.getDevices();
 
             //get the first discover device
+            //this is not common good practice your will need to get your bluetooth device with the mac address
             BluetoothDevice remoteDevice = bluetoothDevice.get(0);
 
             //connect to the device...
