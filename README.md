@@ -5,8 +5,8 @@ those are experimental sample project for learning purposes, mostly contains unf
 
 ## Projects
 
-* AppAuthTest: using the AppAuth(https://github.com/openid/AppAuth-Android) library to authenticate with Slack(https://api.slack.com/docs/oauth). **Android Project**
-* BluetoothLeTest: using TinyB(https://github.com/intel-iot-devkit/tinyb) library to connect to a server and write it's characteristic. **IntellJ Project**
+* AppAuthTest: using the [AppAuth](https://github.com/openid/AppAuth-Android) library to authenticate with [Slack Api](https://api.slack.com/docs/oauth). **Android Project**
+* BluetoothLeTest: using [TinyB](https://github.com/intel-iot-devkit/tinyb) library to connect to a server and write it's characteristic. **IntellJ Project**
 * IssueTrackerKotlin: a sample webpage using Kotlin targeting JavaScript. **IntellJ Project**
 
 
